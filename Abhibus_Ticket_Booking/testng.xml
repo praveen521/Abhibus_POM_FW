@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="Suite1" verbose="1" >
+<listeners> 
+<listener class-name="abhibus_extentReports.Abhibus_ExtentReporterNG" />
+</listeners>
+  <test name="abhibus_booking" >
+    <classes>
+       <class name="abhibus_Execution.Abhibus_ExecutionValidation" />
+    </classes>
+  </test>
+</suite>
