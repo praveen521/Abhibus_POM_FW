@@ -19,6 +19,8 @@ import com.relevantcodes.extentreports.ExtentTest;
 //import com.relevantcodes.extentreports.IReporter;
 import com.relevantcodes.extentreports.LogStatus;
 
+
+//Generating external reports using extent reports
 public class Abhibus_ExtentReporterNG implements IReporter{
 	private ExtentReports extent;
 	

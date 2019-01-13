@@ -27,7 +27,7 @@ package abhibus_BaseClass;
 			public Abhibus_BaseClass() {
 				try {
 				prop=new Properties();
-				FileInputStream ip=new FileInputStream("C:\\Users\\HOME\\eclipse-workspace\\Abhibus_Ticket_Booking\\src\\main\\java\\abhibus_Config\\Abhibus_Config");		
+				FileInputStream ip=new FileInputStream("E:\\praveen\\Abhibus_POM_FW\\Abhibus_Ticket_Booking\\src\\main\\java\\abhibus_Config\\Abhibus_Config");		
 				prop.load(ip);
 				} catch (FileNotFoundException e) {
 					e.printStackTrace();
@@ -41,7 +41,7 @@ package abhibus_BaseClass;
 				// Initializing the web browser and Maximizing 
 				@SuppressWarnings("deprecation")
 				public static void initialise() {
-					String browser="Chrome";
+					String browser=prop.getProperty("Browser1");
 					if(browser.equalsIgnoreCase("chrome")) {
 						ChromeOptions options = new ChromeOptions();
 						//options.addArguments("--incognito");
@@ -78,8 +78,6 @@ package abhibus_BaseClass;
 						driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 						wait = new WebDriverWait(driver, 30);
 						driver.get(prop.getProperty("URL"));
-						driver.close();
-						
 						
 				}
 				
