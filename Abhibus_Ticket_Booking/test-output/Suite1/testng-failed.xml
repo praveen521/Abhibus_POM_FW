@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <listeners>
+    <listener class-name="abhibus_extentReports.Abhibus_ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="abhibus_booking(failed)">
+    <classes>
+      <class name="abhibus_Execution.Abhibus_ExecutionValidation">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="abhibus_Execution"/>
+        </methods>
+      </class> <!-- abhibus_Execution.Abhibus_ExecutionValidation -->
+    </classes>
+  </test> <!-- abhibus_booking(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
