@@ -78,7 +78,7 @@ package abhibus_BaseClass;
 						driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 						wait = new WebDriverWait(driver, 30);
 						driver.get(prop.getProperty("URL"));
-						
+						driver.close();
 						
 						
 				}
